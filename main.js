@@ -42,8 +42,8 @@ function playStream(idVideoTag, stream){
 const peer = new Peer({ 
     host : "0.peerjs.com" , 
     secure : false , 
-    initiator: true,
-    port : 443 ,
+    initiator: true
+    // port : 443 ,
 });
 
 peer.on('open', id => {
