@@ -43,7 +43,7 @@ const peer = new Peer({
     host : "0.peerjs.com" , 
     secure : false , 
     initiator: true,
-    port : 9000 ,
+    port : 443 ,
 });
 
 peer.on('open', id => {
