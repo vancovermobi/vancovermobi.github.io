@@ -36,9 +36,16 @@ function playStream(idVideoTag, stream){
 // openStream()
 // .then(stream => playStream('localStream', stream));
 
-const peer = new Peer ();
+//const peer = new Peer ();
 //const peer = new Peer({key: '26pce8r38qi00000' }); 
 //peer.on('open', id => console.log(id));
+const peer = new Peer({ 
+    host : "0.peerjs.com" , 
+    secure : false , 
+    initiator: true,
+    port : 9000 ,
+});
+
 peer.on('open', id => {
     $('#my-peer').append(id)
     // btn SignUp
